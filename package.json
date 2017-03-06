@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/8845musign/custom-lightning-design-system#readme",
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
     "gulp-sass": "^3.1.0",
     "run-sequence": "^1.2.2"
   },

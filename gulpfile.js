@@ -1,11 +1,10 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
-var clean = require('gulp-clean');
+var del = require('del');
 var sass = require('gulp-sass');
 
-gulp.task('clean', function(){
-  return gulp.src(['build/**/*', '**/*.gitkeep'])
-    .pipe(clean());
+gulp.task('clean', function(cb){
+  return del(["build/**/*", "!build/**/.gitkeep"], cb);
 });
 
 gulp.task('copy', function(){
